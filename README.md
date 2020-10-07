@@ -1,5 +1,8 @@
-## Food Delivery
-Server App
+## Food Delivery (Server App)
+  This app using :- 
+ - nest.JS for backend .
+ - postgre SQL for database .
+ - TypeOrm for mapping entities and connection with database .
 
 ## Installation
 
