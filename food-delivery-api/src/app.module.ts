@@ -6,6 +6,7 @@ import * as Joi from '@hapi/joi';
 import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
 import ApplicationConfigService from './core/app-config/app-config.service';
 import AppConfigModule from './core/app-config/app-config.module';
+import HomeModule from 'modules/home-module/home.module';
 
 @Module({
   imports: [
@@ -29,6 +30,7 @@ import AppConfigModule from './core/app-config/app-config.module';
       },
       inject: [ApplicationConfigService],
     }),
+    HomeModule,
   ],
   controllers: [AppController],
   providers: [AppService],
